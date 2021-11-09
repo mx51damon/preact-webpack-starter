@@ -31,9 +31,6 @@
     "html-webpack-plugin": "^5.5.0",
     "husky": "^4.3.8",
     "jest": "^27.3.1",
-    "lint-staged": "^11.2.6",
-    "preact": "^10.5.15",
-    "preact-router": "^3.2.1",
     "prettier": "^2.4.1",
     "ts-jest": "^27.0.7",
     "ts-loader": "^9.2.6",
@@ -43,12 +40,13 @@
     "webpack-dev-server": "^4.4.0",
     "webpack-merge": "^5.8.0"
   },
-  "jest": {
-    "testEnvironment": "jsdom"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint && npm run test"
     }
+  },
+  "dependencies": {
+    "preact": "^10.5.15",
+    "preact-router": "^3.2.1"
   }
 }
