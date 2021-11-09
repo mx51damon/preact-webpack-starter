@@ -1,3 +1,5 @@
 import { h, render } from 'preact';
 
-render(<div>Hello Preact ~</div>, document.getElementById('root') as Element);
+export const App = () => <div>Hello Preact ~</div>;
+
+render(<App />, document.getElementById('root') as Element);
