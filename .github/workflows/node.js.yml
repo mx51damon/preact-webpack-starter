@@ -4,7 +4,7 @@ on:
   push:
     branches: [master]
   pull_request:
-    branches: [master, sample-ui, trial]
+    branches: [master, sample-ui, trial, try]
 
 jobs:
   build:
