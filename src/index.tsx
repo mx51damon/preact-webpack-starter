@@ -1,5 +1,5 @@
+import './index.css';
 import { h, render } from 'preact';
+import Routes from './components/Routes';
 
-export const App = () => <div>Hello Preact ~</div>;
-
-render(<App />, document.getElementById('root') as Element);
+render(<Routes />, document.getElementById('root') as Element);

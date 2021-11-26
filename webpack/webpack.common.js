@@ -11,6 +11,10 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [
@@ -19,7 +23,11 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      react: 'preact/compat',
+      'react-dom': 'preact/compat',
+    },
+    extensions: ['.tsx', '.ts', '.js', 'jsx'],
   },
   output: {
     filename: 'bundle.js',
